@@ -2,36 +2,36 @@
 
 // Incorrect Implementation
 
-/*
-public class Employee {
-    private int id;
-    private double salary;
+            /*
+            public class Employee {
+                private int id;
+                private double salary;
 
-    public double getSalary(){
-        return salary;
-    }
+                public double getSalary(){
+                    return salary;
+                }
 
-    public double calculateTax(){
-        ...
-    }
-}
-*/
+                public double calculateTax(){
+                    ...
+                }
+            }
+            */
 
 
 //Correct Implementation
-/*
-public  class Employee {
-    private int id;
-    private double salary;
+            /*
+            public  class Employee {
+                private int id;
+                private double salary;
 
-    public double getSalary(){
-        return salary;
-    }
-}
+                public double getSalary(){
+                    return salary;
+                }
+            }
 
-public class TaxCalculator{
-    public double calculateTax(Employee employee){
-        ...
-    }
-}
-*/
+            public class TaxCalculator{
+                public double calculateTax(Employee employee){
+                    ...
+                }
+            }
+            */
