@@ -1,0 +1,51 @@
+// Objects of super class should be replaceable (substitubale) with Objects of Subclasses without affecting correctness of the program.
+
+// Incorrect Implementation
+
+        // public abstract class Animal {
+        //     public void makeSound();
+        // }
+
+        // public class Dog extends Animal {
+        //     @Override
+        //     public void makeSound() {
+        //         System.out.println("Woof woof!");
+        //     }
+        // }
+
+        // public class Cat extends Animal {
+        //     @Override
+        //     public void makeSound() {
+        //         System.out.println("I am eating Cat Food");
+        //     }
+        // }
+
+        // class AnimalSoundPlayer {
+        //     animal.makeSound();
+        // }
+
+// Correct Implementation
+
+        // public abstract class Animal {
+        //     public void makeSound();
+        // }
+
+        // public class Dog extends Animal {
+        //     @Override
+        //     public void makeSound() {
+        //         System.out.println("Woof woof!");
+        //     }
+        // }
+
+        // public class Cat extends Animal {
+        //     @Override
+        //     public void makeSound() {
+        //         System.out.println("Meow meow!");
+        //     }
+        // }
+
+        // class AnimalSoundPlayer{
+        //     public void playSound(Animal animal) {
+        //         animal.makeSound();
+        //     }
+        // }
