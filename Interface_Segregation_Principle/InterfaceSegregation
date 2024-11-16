@@ -1,0 +1,55 @@
+// A client should not forced to implement interface it does not use
+
+// Incorrect Implementation
+
+            // public interface Animal {
+            //     public void makeSound();
+            //     public void groom();
+            // }
+
+            // public class Tiger implements Animal {
+            //     public void makeSound(){
+            //         System.out.println("Roar!";)
+            //     }
+            //     public void groom() {
+            //     }
+            // }
+
+            // public class Cat implements Animal {
+            //     @Override
+            //     public void makeSound(){
+            //         System.out.println("Meow!");
+            //     }
+
+            //     @Override
+            //     public void groom(){
+            //         System.out.println("Cat is Grooming");
+            //     }
+            // }
+
+// Correct Implementation
+
+            // public interface Animal {
+            //     public void makeSound();
+            // }
+
+            // public interface Pet {
+            //     public void groom();
+            // }
+
+            // public class Tiger implements Animal {
+            //     public void makeSound() {
+            //         System.out.println("Roar!");
+            //     }
+            // }
+
+            // public class interface Cat implements Animal,Pet {
+            //     @Override
+            //     public void makeSound() {
+            //         System.out.println("Meow!");
+            //     }
+            //     @Override
+            //     public void groom() {
+            //         System.out.println("Cat is Grooming");
+            //     }
+            // }
