@@ -1,0 +1,41 @@
+// ENtities must depend on abstractions, not on concrete implementations
+
+// Incorrect Implementation
+
+            // public class Cat {
+            //     public void makeSound() {
+            //         System.out.println("Meow meow!");
+            //     }
+            // }
+
+            // class AnimalSoundPlayer {
+            //     public void playSound(Cat cat) {
+            //         cat.playSound();
+            //     }
+            // }
+
+// Correct implementation
+
+        // public abstract class Animal {
+        //     public void makeSound();
+        // }
+
+        // public class Dog extends Animal {
+        //     @Override
+        //     public void makeSound() {
+        //         System.out.println("Woof woof!");
+        //     }
+        // }
+
+        // public class Cat extends Animal {
+        //     @Override
+        //     public void makeSound() {
+        //         System.out.println("Meow meow!");
+        //     }
+        // }
+
+        // class AnimalSoundPlayer{
+        //     public void playSound(Animal animal) {
+        //         animal.makeSound();
+        //     }
+        // }
