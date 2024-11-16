@@ -22,7 +22,7 @@ class SimplePrinter implements Printer {
 class MultiFunctionPrinter implements Printer, Scanner, Fax {
     @Override
     public void print(String document) {
-        System.out.println("Scanning document: " + document);
+        System.out.println("Printing document: " + document);
     }
     @Override
     public void scan (String document){
